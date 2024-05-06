@@ -1,7 +1,7 @@
 import gradio as gr
 import os
 import torch
-from lmdeploy import pipeline, TurbomindEngineConfig
+from transformers import AutoModelForCausalLM, AutoTokenizer, AutoModel
 
 
 # download internlm2 to the base_path directory using git tool
