@@ -1,5 +1,4 @@
 gradio==4.10.0
-lmdeploy[all]==0.4.0
 einops
 transformers
 streamlit
