@@ -1,5 +1,6 @@
 gradio
 einops
+autoawq
 transformers
 streamlit
 sentencepiece
