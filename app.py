@@ -5,8 +5,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, AutoModel
 
 
 # download internlm2 to the base_path directory using git tool
-base_path = './llama3-8b-chat'
-os.system(f'git clone https://code.openxlab.org.cn/eoeterang/HealthGuardian.git {base_path}')
+base_path = './llama3-8b-chat-4bit'
+os.system(f'git clone https://code.openxlab.org.cn/eoeterang/HealthGuardian_4bit.git {base_path}')
 os.system(f'cd {base_path} && git lfs pull')
 
 tokenizer = AutoTokenizer.from_pretrained(base_path,trust_remote_code=True)
@@ -17,8 +17,10 @@ def chat(message,history):
         yield response
 
 gr.ChatInterface(chat,
-                 title="Llama3-Chat-8B-Medical",
+                 title="Llama3-Chat-8B-Medical-4bit",
                 description="""
 Llam3-Chat-8B-Medical is mainly developed to enhance medical QA quality.  
                  """,
                  ).queue(1).launch()
+
+ 
