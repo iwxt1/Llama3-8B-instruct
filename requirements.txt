@@ -1,10 +1,11 @@
-gradio
-einops
 transformers
+autoawq
 streamlit
 sentencepiece
 einops
 accelerate
 transformers_stream_generator
-tiktoken
 openxlab
+tiktoken
+oss2
+requests
