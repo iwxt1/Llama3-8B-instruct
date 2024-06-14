@@ -168,7 +168,7 @@ def load_model():
     
     # base_path = '/root/HealthGuardian_4bit'
     base_path = './HealthGuardian'
-    os.system(f'git clone https://code.openxlab.org.cn/eoeterang/HealthGuardian_4bit.git {base_path}')
+    os.system(f'git clone https://code.openxlab.org.cn/eoeterang/HealthGuardian.git {base_path}')
     os.system(f'cd {base_path} && git lfs pull')
     
 
