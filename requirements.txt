@@ -1,4 +1,5 @@
 transformers
+pytorch-cuda
 autoawq
 streamlit
 sentencepiece
